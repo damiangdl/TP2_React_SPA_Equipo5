@@ -16,6 +16,7 @@ Migración del TP1 (HTML/CSS/JS) a una **Single Page Application** con **React +
 - Integrantes (lista) + Integrante (detalle con /:id)
 - Datos desde JSON local (20 objetos + buscador)
 - Datos desde API pública (Rick & Morty)
+- Diagramas
 - NotFound
 
 ## Rutas
@@ -25,35 +26,8 @@ Migración del TP1 (HTML/CSS/JS) a una **Single Page Application** con **React +
 - `/integrantes/:id` Detalle
 - `/datos-locales` JSON local
 - `/datos-api` API pública
+- `/diagramas` Diagramas de carpetas y componentes
 
-## Estructura
-```
-/
-├─ index.html
-├─ package.json
-├─ vite.config.js
-├─ public/
-│  ├─ logo.svg
-│  └─ diagrams/ (exportar PNG/JPG de los diagramas)
-└─ src/
-   ├─ App.jsx
-   ├─ main.jsx
-   ├─ styles/index.css
-   ├─ components/
-   │  ├─ Sidebar.jsx
-   │  └─ Card.jsx
-   ├─ data/
-   │  ├─ integrantes.json
-   │  └─ items.json
-   └─ pages/
-      ├─ Portada.jsx
-      ├─ Bitacora.jsx
-      ├─ Integrantes.jsx
-      ├─ Integrante.jsx
-      ├─ DataLocal.jsx
-      ├─ DataAPI.jsx
-      └─ NotFound.jsx
-```
 
 ## Cómo correr
 ```bash
@@ -62,4 +36,3 @@ npm run dev
 # Deploy en Vercel (Vite): build -> npm run build, output -> dist/
 ```
 
-> Falta actualizar  `src/data/integrantes.json` con datos reales y poner los diagramas en `public/diagrams/`.
